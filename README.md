@@ -4,55 +4,30 @@
 
 ```code .```
 
-```
-conda create -p venv python=3.8 -y
-```
-```
-source activate ./venv
+```conda create -p venv python=3.8 -y```
 
-```
-git init
-```
+```source activate ./venv```
 
-```
-touch .gitignore
-```
+```git init```
 
-```
-touch README.md
-```
+```touch .gitignore```
 
-```
-pip install -r requirements.txt
-```
-```
-dvc init
-```
+```touch README.md```
 
-```
-dvc repro
-```
+```pip install -r requirements.txt```
 
-```
-dvc dag
-```
+```dvc init```
 
-```
-dvc add <file name>
-```
+```dvc repro```
 
-```
-git add <file_names> && git commit -m "file added successfully
-```
+```dvc dag```
 
-```
-dvc remote add myremote <any_remote_location>
-```
+```dvc add <file name>```
 
-```
-dvc push
-```
+```git add <file_names> && git commit -m "file added successfully```
 
-```
-https://dvc.org/doc
-```
+```dvc remote add myremote <any_remote_location>```
+
+```dvc push```
+
+```https://dvc.org/doc```
