@@ -1,14 +1,8 @@
-```
-mkdir dv
-```
+```mkdir dv```
 
-```
-cd dvc
-```
+```cd dvc```
 
-```
-code .
-```
+```code .```
 
 ```
 conda create -p venv python=3.8 -y
