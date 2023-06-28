@@ -18,9 +18,9 @@
 
 ```dvc init```
 
-```dvc repro```
+```dvc repro``` reproducing command to run the stages inside dvc.yaml
 
-```dvc dag```
+```dvc dag``` (directed acyclic graph) to get the graphical represtation of the stage connectivity
 
 ```dvc add <file name>```
 
