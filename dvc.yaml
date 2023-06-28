@@ -16,6 +16,23 @@ stages:
       - artifacts.txt
       - stage_02.py
 
+  stage_03:
+    cmd: python stage_03.py  
+    deps:
+      - artifacts.txt
+      - stage_03.py      
 
-    
+# this file have stage 1 whose output affects stage 2 and stag2 is depended
+# on stage 1
+# as you make changes in files it will change in hash values of dvc.lock
+# and like we have not make any chnage in artifacts.txt so there is no
+# any change in hash value of artifatcs
+
+# likw in this stage_03.py we have add something to artifacts.txt
+# so till stage_02 artifacts hash id was same but when go to stage_03
+# it changes because i added somethjign inside artifacts
+# and as we add it will change
+# and one more thing "dvc dag " it is a data acyclic graph
+# which represents the dependencies of file in a graphical manner
+# just like hierarichal tree
       
